@@ -37,6 +37,13 @@ export default function Home() {
           {data.slice(0, 4).map((item, i) => (
             <div key={i} className={styles.service}>
               <item.image className={styles.serviceIcon} />
+              {/* <Image
+                src="/image/banner.webp"
+                alt="testimonials"
+                width={50}
+                height={50}
+                style={{ borderRadius: "50%" }}
+              /> */}
               <h3>{item.title}</h3>
               <p>{item.desc}</p>
             </div>
@@ -89,14 +96,20 @@ export default function Home() {
       <div className={styles.serviceContainer}>
         <Divider className={styles.divider}>
           <div className={styles.heading}></div>
-          <h2>Recent Work</h2>
+          <h2>Our Clients</h2>
         </Divider>
         <div className={styles.worksBox}>
           {works.slice(0, 4).map((item, i) => (
             <div key={i} className={styles.work}>
-              <item.image className={styles.workIcon} />
+              <Image
+                src="/image/banner.webp"
+                alt="testimonials"
+                width={50}
+                height={50}
+                style={{ borderRadius: "50%" }}
+              />
               <h3>{item.title}</h3>
-            
+              <p>{item.desc}</p>
             </div>
           ))}
         </div>

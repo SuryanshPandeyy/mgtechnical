@@ -11,13 +11,11 @@ const Footer = () => {
         <div className={styles.footerDetail}>
           <h2 className={styles.heading}>MG Technicals</h2>
           <div>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-            mattis ligula eget nulla euismod maximus. Vestibulum ac accumsan
-            tortor, nec lobortis arcu. Quisque ultrices tincidunt lorem sed
-            volutpat. Aliquam erat volutpat. Fusce vulputate nulla vitae
-            sollicitudin consectetur. Cras aliquam augue a ante luctus tempus.
-            Vestibulum placerat dapibus nibh, id mattis erat mattis vel. Nam sit
-            amet finibus nisi.
+            MG Technicals is a Rajatshan based IT Company, offering 360° IT
+            solutions and Working as a Creative agency and doing some different
+            type of innovations. Mohit gaur is Founder and CEO of MG Technicals,
+            MG Technicals is serving in Whole india with successful customer
+            History of Many national corporations since 2017
           </div>
         </div>
         <div className={styles.footerList}>

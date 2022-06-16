@@ -1,32 +1,36 @@
-import WebIcon from "@mui/icons-material/Web";
-import AppShortcutIcon from "@mui/icons-material/AppShortcut";
-import MicIcon from "@mui/icons-material/Mic";
-import TerminalIcon from '@mui/icons-material/Terminal';
-import AddBusinessIcon from "@mui/icons-material/AddBusiness";
+import {
+  MdWeb,
+  MdOutlineAppSettingsAlt,
+  MdOutlineMic,
+  
+  MdAddBusiness,
+} from "react-icons/md";
+
+import {BsTerminalFill} from 'react-icons/bs';
 
 const data = [
   {
-    image: WebIcon,
+    image: MdWeb,
     title: "Website Development",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In facilisis scelerisque tortor id sodales. Aliquam id sapien non felis aliquet semper a ac lacus. Donec ultrices ante at tortor eleifend elementum.",
+    desc: "Web development services help create all types of web-based software and ensure great experience for web users. ",
   },
   {
-    image: AppShortcutIcon,
+    image: MdOutlineAppSettingsAlt,
     title: "App Development",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In facilisis scelerisque tortor id sodales. Aliquam id sapien non felis aliquet semper a ac lacus. Donec ultrices ante at tortor eleifend elementum.",
   },
   {
-    image: MicIcon,
+    image: MdOutlineMic,
     title: "Voice Over and Creative Ads",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In facilisis scelerisque tortor id sodales. Aliquam id sapien non felis aliquet semper a ac lacus. Donec ultrices ante at tortor eleifend elementum.",
   },
   {
-    image: TerminalIcon,
+    image: BsTerminalFill,
     title: "Software Solutions",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In facilisis scelerisque tortor id sodales. Aliquam id sapien non felis aliquet semper a ac lacus. Donec ultrices ante at tortor eleifend elementum.",
   },
   {
-    image: AddBusinessIcon,
+    image: MdAddBusiness,
     title: "Marketing Services",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In facilisis scelerisque tortor id sodales. Aliquam id sapien non felis aliquet semper a ac lacus. Donec ultrices ante at tortor eleifend elementum.",
   },

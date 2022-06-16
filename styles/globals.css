@@ -1,18 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-size: 1.5rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 html {
   font-size: 62.5%;
 }
 
-body{
+body {
   background-color: #222;
 }
 
@@ -34,6 +34,7 @@ body{
 /* about page*/
 .aboutContainer {
   padding: 0rem 2rem;
+  margin: 3rem 0 0 0 ;
 }
 
 .aboutBox {
@@ -67,12 +68,13 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 2rem 0 5rem 0;
+  margin: 5rem 0 5rem 0;
   padding: 0 2rem;
 }
 
 .contactContainer .contactForm {
   margin: 2rem 0 0 0;
+  background-color: #fff;
   padding: 2rem 3rem;
   box-shadow: 0 0 1rem 0.1rem rgb(58, 58, 58);
   border-radius: 1rem;

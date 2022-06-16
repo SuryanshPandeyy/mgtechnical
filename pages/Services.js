@@ -17,6 +17,13 @@ const Services = () => {
             <>
               <div className={styles.service}>
                 <item.image className={styles.serviceIcon} />
+                {/* <Image
+                  src="/image/banner.webp"
+                  alt="testimonials"
+                  width={50}
+                  height={50}
+                  style={{ borderRadius: "50%" }}
+                /> */}
                 <h3>{item.title}</h3>
                 <p>{item.desc}</p>
               </div>
