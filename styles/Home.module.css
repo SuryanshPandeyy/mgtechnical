@@ -94,7 +94,8 @@
 }
 
 .header .menu .menuList a:hover {
-  background-color: orange;
+  background-color: #d50100;
+  color: #fff;
 }
 
 /* footer */
@@ -233,7 +234,7 @@
 }
 
 .bannerBtnContainer button {
-  background-color: royalblue;
+  background-color: #d50000eb;
   color: #fff;
   font-size: 1.2rem;
   margin: 0 1rem;
@@ -241,12 +242,12 @@
 }
 
 .bannerBtnContainer button:hover {
-  background-color: royalblue;
+  background-color: #d50100;
 }
 
 .bannerBtnContainer button:last-child {
   background-color: transparent;
-  border: 0.2rem solid royalblue;
+  border: 0.2rem solid #d50100;
 }
 
 .serviceContainer {
@@ -278,7 +279,7 @@
   left: 50%;
   top: -0.5rem;
   transform: translateX(-50%);
-  border: 0.5rem solid royalblue;
+  border: 0.5rem solid #343434;
   z-index: 2;
 }
 
@@ -303,23 +304,21 @@
   padding: 2rem 1rem;
 }
 
-.service:nth-child(4n + 1) {
-  background: rgb(245, 208, 208);
-  border: 0.1rem solid rgb(251, 199, 199);
+.service:nth-child(3n + 1) {
+  background: #d50100;
+  color: #fff;
+  border: 0.1rem #ff0000;
 }
 
-.service:nth-child(4n + 2) {
-  background: rgb(208, 245, 212);
-  border: 0.1rem solid rgb(207, 251, 199);
+.service:nth-child(3n + 2) {
+  background: rgb(42, 42, 42);
+  border: 0.1rem solid rgb(0, 0, 0);
+  color: #fff;
 }
 
-.service:nth-child(4n + 3) {
-  background: rgb(209, 208, 245);
-  border: 0.1rem solid rgb(199, 200, 199);
-}
-.service:nth-child(4n + 4) {
-  background: rgb(244, 245, 208);
-  border: 0.1rem solid rgb(251, 247, 199);
+.service:nth-child(3n + 3) {
+  background: rgb(250, 231, 135);
+  border: 0.1rem solid rgb(255, 213, 0);
 }
 
 .serviceImg {
@@ -333,7 +332,6 @@
 
 .service p {
   font-size: 1.3rem;
-  color: #333;
 }
 
 a.serviceBtn {
@@ -348,12 +346,12 @@ a.serviceBtn:hover {
 }
 
 .aboutContainer {
-  background-color: rgb(34, 51, 113);
+  background: #343434;
   padding: 5rem 0;
 }
 
 .aboutContainer h2 {
-  background-color: rgb(34, 51, 113);
+  background-color: #343434;
   color: #fff;
 }
 
