@@ -336,14 +336,14 @@
   color: #333;
 }
 
-.serviceBtn {
+a.serviceBtn {
   background-color: royalblue;
   color: #fff;
   padding: 1rem 3rem;
   font-size: 1.3rem;
 }
 
-.serviceBtn:hover {
+a.serviceBtn:hover {
   background-color: royalblue;
 }
 
