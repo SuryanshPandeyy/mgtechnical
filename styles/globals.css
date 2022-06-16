@@ -1,16 +1,139 @@
-html,
-body {
+@import url("https://fonts.googleapis.com/css2?family=Tai+Heritage+Pro&display=swap");
+* {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
   box-sizing: border-box;
+  font-size: 1.5rem;
+  font-family: "Tai Heritage Pro", serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.divider {
+  position: relative;
+}
+
+.divider .heading {
+  position: absolute;
+  width: 30rem;
+  height: 5rem;
+  left: 50%;
+  top: -0.5rem;
+  transform: translateX(-50%);
+  border: 0.5rem solid royalblue;
+  z-index: 2;
+}
+
+/* about page*/
+.aboutContainer {
+  padding: 0rem 2rem;
+}
+
+.aboutBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 2rem 0rem;
+  border-radius: 1rem;
+}
+
+.aboutContainer h1,
+.contactContainer h1 {
+  font-size: 4rem;
+  font-weight: 400;
+  background-color: rgb(255, 255, 255);
+  padding: 0 1rem;
+  z-index: 3;
+  position: relative;
+}
+
+.aboutBox p {
+  margin: 2rem 0;
+  word-spacing: 0.1rem;
+  letter-spacing: 0.05rem;
+  font-size: 1.3rem;
+}
+
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2rem 0 5rem 0;
+  padding: 0 2rem;
+}
+
+.contactContainer .contactForm {
+  margin: 2rem 0 0 0;
+  padding: 2rem 3rem;
+  box-shadow: 0 0 1rem 0.1rem rgb(221, 221, 221);
+  border-radius: 1rem;
+}
+
+.contactForm .contactInputContainer {
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 3rem 0;
+}
+
+.contactInputContainer label {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  position: absolute;
+  top: 0.5rem;
+  left: 1.5rem;
+  background-color: rgb(255, 255, 255);
+  transition: all 0.2s linear;
+}
+
+.contactInputContainer input {
+  padding: 0.5rem 1rem;
+  border: 0.13rem solid #aaa;
+}
+
+.contactInputContainer textarea {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 0.13rem solid #aaa;
+}
+
+.pointsBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pointInnerBox {
+  margin: 0 1.5rem;
+}
+
+.pointItem {
+  background-color: rgb(153, 20, 120);
+  color: #fff;
+  margin: 1rem 0;
+  padding: 2rem 1rem;
+  box-shadow: 0 0 1rem 0.1rem rgba(153, 20, 120, 0.6);
+}
+
+.contactInputContainer input:focus,
+.contactInputContainer textarea:focus {
+  outline: none;
+}
+
+.contactForm button.send {
+  background-color: royalblue;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 1rem 4rem;
+  width: 100%;
+}
+
+.contactInputContainer:focus-within label {
+  position: absolute;
+  top: -1.2rem;
+  transition: all 0.2s linear;
+  font-size: 1.2rem;
 }
