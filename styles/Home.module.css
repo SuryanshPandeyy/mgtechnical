@@ -303,6 +303,8 @@
   min-width: 30rem;
   word-wrap: break-word;
   padding: 2rem 1rem;
+  width: fit-content;
+  height: 35rem;
 }
 
 .service:nth-child(2n + 1) {
@@ -319,6 +321,10 @@
 
 .serviceImg {
   /* mix-blend-mode:darken; */
+}
+
+.serviceIcon {
+  font-size: 10rem;
 }
 
 .service h3 {
@@ -339,6 +345,43 @@ a.serviceBtn {
 
 a.serviceBtn:hover {
   background-color: royalblue;
+}
+
+.worksBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 2rem;
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.work {
+  display: flex;
+  width: 100%;
+  height: 15rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 0 1rem 0.1rem #333;
+  color: #fff;
+  padding: 2rem;
+  margin: 0 1rem;
+}
+
+.workIcon {
+  font-size: 4rem;
+}
+
+.work h3 {
+  font-size: clamp(0.8rem, 2vw, 1.5rem);
+  margin: 1rem 0;
+}
+
+.work p {
+  font-size: clamp(0.6rem, 1.5vw, 1.1rem);
+  margin-bottom: 1rem;
 }
 
 .aboutContainer {
@@ -367,7 +410,22 @@ a.serviceBtn:hover {
   display: flex;
   align-items: center;
   color: #fff;
-  background-color: initial;
+  width: fit-content;
+  position: relative;
+}
+
+.aboutBox h3::after {
+  content: "";
+  position: absolute;
+  border-bottom: 0.2rem solid rgb(255, 255, 255);
+  width: 0%;
+  bottom: 0;
+  transition: all 0.2s linear;
+}
+
+.aboutBox li:hover h3::after {
+  border-bottom: 0.2rem solid #fff;
+  width: 100%;
 }
 
 .aboutBox h3 .aboutLine {

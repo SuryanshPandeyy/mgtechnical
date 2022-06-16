@@ -1,6 +1,7 @@
 import { Button, ButtonGroup, Divider } from "@mui/material";
 import Image from "next/image";
 import data from "../data/service";
+import works from "../data/works";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
 
@@ -34,19 +35,11 @@ export default function Home() {
 
         <div className={styles.serviceBox}>
           {data.slice(0, 4).map((item, i) => (
-            <>
-              <div className={styles.service}>
-                <Image
-                  src={item.image}
-                  alt="service1"
-                  width={100}
-                  height={100}
-                  className={styles.serviceImg}
-                />
-                <h3>{item.title}</h3>
-                <p>{item.desc}</p>
-              </div>
-            </>
+            <div key={i} className={styles.service}>
+              <item.image className={styles.serviceIcon} />
+              <h3>{item.title}</h3>
+              <p>{item.desc}</p>
+            </div>
           ))}
         </div>
         <Link href="./Services" passHref>
@@ -67,12 +60,9 @@ export default function Home() {
                 <div>01</div>
                 <div className={styles.line}></div>
               </div>
-              High Quality Products
+              High Quality
             </h3>
-            <p>
-              lorem kjfj ahfesjfin hargjf jakrkjwrh mklhiowerhowr iqwowrh oiwqrh
-              jj oaiwhr kwrh wjwrh
-            </p>
+            <p></p>
           </li>
           <li>
             <h3>
@@ -80,12 +70,9 @@ export default function Home() {
                 <div>02</div>
                 <div className={styles.line}></div>
               </div>
-              High Quality Products
+              Best Service
             </h3>
-            <p>
-              lorem kjfj ahfesjfin hargjf jakrkjwrh mklhiowerhowr iqwowrh oiwqrh
-              jj oaiwhr kwrh wjwrh
-            </p>
+            <p></p>
           </li>
           <li>
             <h3>
@@ -93,14 +80,26 @@ export default function Home() {
                 <div>03</div>
                 <div className={styles.line}></div>
               </div>
-              High Quality Products
+              High Quality Team
             </h3>
-            <p>
-              lorem kjfj ahfesjfin hargjf jakrkjwrh mklhiowerhowr iqwowrh oiwqrh
-              jj oaiwhr kwrh wjwrh
-            </p>
+            <p></p>
           </li>
         </ol>
+      </div>
+      <div className={styles.serviceContainer}>
+        <Divider className={styles.divider}>
+          <div className={styles.heading}></div>
+          <h2>Recent Work</h2>
+        </Divider>
+        <div className={styles.worksBox}>
+          {works.slice(0, 4).map((item, i) => (
+            <div key={i} className={styles.work}>
+              <item.image className={styles.workIcon} />
+              <h3>{item.title}</h3>
+            
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

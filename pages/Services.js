@@ -16,13 +16,7 @@ const Services = () => {
           {data.map((item, i) => (
             <>
               <div className={styles.service}>
-                <Image
-                  src={item.image}
-                  alt="service1"
-                  width={100}
-                  height={100}
-                  className={styles.serviceImg}
-                />
+                <item.image className={styles.serviceIcon} />
                 <h3>{item.title}</h3>
                 <p>{item.desc}</p>
               </div>
