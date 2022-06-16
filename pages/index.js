@@ -17,8 +17,12 @@ export default function Home() {
           />
         </div>
         <div className={styles.bannerBtnContainer}>
-          <Button>Read More</Button>
-          <Button>Know More</Button>
+          <Link href="https://wa.me/+919571735742" passHref>
+            <Button>Whatsapp</Button>
+          </Link>
+          <Link href="tel: +919571735742" passHref>
+            <Button>Call Us</Button>
+          </Link>
         </div>
       </div>
 

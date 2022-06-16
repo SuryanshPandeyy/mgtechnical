@@ -11,6 +11,10 @@ html {
   font-size: 62.5%;
 }
 
+body{
+  background-color: #222;
+}
+
 .divider {
   position: relative;
 }
@@ -22,7 +26,7 @@ html {
   left: 50%;
   top: -0.5rem;
   transform: translateX(-50%);
-  border: 0.5rem solid royalblue;
+  border: 0.5rem solid #fff;
   z-index: 2;
 }
 
@@ -43,10 +47,11 @@ html {
 .contactContainer h1 {
   font-size: 4rem;
   font-weight: 400;
-  background-color: rgb(255, 255, 255);
+  background-color: #222;
   padding: 0 1rem;
   z-index: 3;
   position: relative;
+  color: #fff;
 }
 
 .aboutBox p {
@@ -54,6 +59,7 @@ html {
   word-spacing: 0.1rem;
   letter-spacing: 0.05rem;
   font-size: 1.3rem;
+  color: #fff;
 }
 
 .contactContainer {
@@ -67,7 +73,7 @@ html {
 .contactContainer .contactForm {
   margin: 2rem 0 0 0;
   padding: 2rem 3rem;
-  box-shadow: 0 0 1rem 0.1rem rgb(221, 221, 221);
+  box-shadow: 0 0 1rem 0.1rem rgb(58, 58, 58);
   border-radius: 1rem;
 }
 
@@ -124,7 +130,7 @@ html {
 }
 
 .contactForm button.send {
-  background-color: royalblue;
+  background-color: #d50100;
   color: #fff;
   font-size: 1.5rem;
   padding: 1rem 4rem;
