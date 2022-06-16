@@ -1,12 +1,12 @@
 const data = [
   {
     image: "/image/web.png",
-    title: "Web",
+    title: "Website Development",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In facilisis scelerisque tortor id sodales. Aliquam id sapien non felis aliquet semper a ac lacus. Donec ultrices ante at tortor eleifend elementum.",
   },
   {
     image: "/image/app.png",
-    title: "App",
+    title: "App Development",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In facilisis scelerisque tortor id sodales. Aliquam id sapien non felis aliquet semper a ac lacus. Donec ultrices ante at tortor eleifend elementum.",
   },
   {
@@ -16,17 +16,17 @@ const data = [
   },
   {
     image: "/image/ads.png",
-    title: "Ads",
+    title: "Creative Ads",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In facilisis scelerisque tortor id sodales. Aliquam id sapien non felis aliquet semper a ac lacus. Donec ultrices ante at tortor eleifend elementum.",
   },
   {
     image: "/image/project.png",
-    title: "Project",
+    title: "Software Maintenance",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In facilisis scelerisque tortor id sodales. Aliquam id sapien non felis aliquet semper a ac lacus. Donec ultrices ante at tortor eleifend elementum.",
   },
   {
     image: "/image/manager.png",
-    title: "Management",
+    title: "Digital Marketing",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In facilisis scelerisque tortor id sodales. Aliquam id sapien non felis aliquet semper a ac lacus. Donec ultrices ante at tortor eleifend elementum.",
   },
 ];
