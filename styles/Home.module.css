@@ -48,12 +48,6 @@
   background-color: #194b8c;
 }
 
-.header .navigation .link:last-child div {
-  padding: 1rem 2rem;
-  background-color: rgb(223, 200, 25);
-  color: rgb(0, 0, 0);
-}
-
 .header .menu {
   position: fixed;
   transition: left 0.3s linear;
