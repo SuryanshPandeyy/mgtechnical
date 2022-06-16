@@ -38,12 +38,13 @@ const Header = () => {
                 <Image
                   src={logo}
                   alt="logo"
-                  width="70"
-                  height="70"
+                  width="80"
+                  height="80"
                   objectFit="contain"
                   loader={({ src, width }) => `${src}/?${width}`}
                 />
               </div>
+              <h1>MG technicals</h1>
             </a>
           </Link>
           <nav className={styles.navigation}>
