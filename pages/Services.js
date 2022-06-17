@@ -2,33 +2,41 @@ import { Button, Dialog, Divider } from "@mui/material";
 import Image from "next/image";
 import React from "react";
 import styles from "/styles/Home.module.css";
-import data from "/data/service";
+import useSWR from "swr";
 
 const Services = () => {
+  const fetcher = (...args) => fetch(...args).then((res) => res.json());
+  const { data, error } = useSWR("/api/services", fetcher);
+
+  if (error) return console.log(error);
+  if (!data) return console.log("loading");
+
+  const serviceData = data.service;
+
   return (
     <>
-      <div className={styles.serviceContainer} style={{ margin: 0 }}>
-        <Divider>
+      <div className={styles.serviceContainer}>
+        <Divider className="divider">
+          <div className="heading"></div>
           <h1>Our Services</h1>
         </Divider>
 
         <div className={styles.serviceBox}>
-          {data.map((item, i) => (
-            <>
-              <div className={styles.service}>
-                <item.image className={styles.serviceIcon} />
+          {serviceData &&
+            serviceData.slice(0, 4).map((item, i) => (
+              <div key={i} className={styles.service}>
+                <item.file className={styles.serviceIcon} />
                 {/* <Image
-                  src="/image/banner.webp"
-                  alt="testimonials"
-                  width={50}
-                  height={50}
-                  style={{ borderRadius: "50%" }}
-                /> */}
+                src={item.file}
+                alt="testimonials"
+                width={50}
+                height={50}
+                style={{ borderRadius: "50%" }}
+              /> */}
                 <h3>{item.title}</h3>
                 <p>{item.desc}</p>
               </div>
-            </>
-          ))}
+            ))}
         </div>
       </div>
     </>

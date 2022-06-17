@@ -1,0 +1,88 @@
+.container{
+ min-height: 100vh;
+ padding: 0rem 2rem;
+}
+
+.add{
+ margin: 3rem 0;
+}
+
+.add a{
+ background-color: rgba(255, 0, 0, 0.727);
+ color: #fff;
+ padding: 1rem 5rem;
+ font-size: 1.5rem;
+}
+
+.add a:hover{
+ background-color: red;
+ color: #fff;
+ padding: 1rem 5rem;
+ font-size: 1.5rem;
+}
+
+.table{
+ border: .2rem solid red;
+ border-radius: .5rem;
+ padding: 0rem 1rem;
+}
+
+.tableBox:first-child{
+ width: 100%;
+ display: flex;
+ align-items: center;
+ list-style: none;
+ justify-content: space-around;
+ background-color: red;
+ padding: 1rem 0;
+ margin: 1rem 0; 
+ color: #fff;
+}
+
+.tableBox li:first-child{
+ width: 10%;
+}
+
+.tableBox li:nth-child(2){
+ width: 25%;
+}
+
+.tableBox li{
+ width: 40%;
+ display: flex;
+ align-items: center;
+ justify-content: flex-start;
+ margin: 0 .5rem;
+}
+
+.tableBox li .edit{
+ background-color: royalblue;
+}
+
+.tableBox li button{
+ margin: 0 .2rem;
+ background-color: red;
+ color: #fff;
+}
+
+.tableBox li button:not(.edit):hover{
+ background-color: red;
+}
+
+.tableBox{
+ width: 100%;
+ display: flex;
+ /* align-items: center; */
+ list-style: none;
+ justify-content: space-around;
+ border: .2rem solid red;
+ padding: 1rem 0;
+ margin: 1rem 0;
+}
+
+.tableBox li .photo{
+ width: 3rem;
+ aspect-ratio: 1/1;
+ border: .1rem solid grey;
+ border-radius: 50%;
+}

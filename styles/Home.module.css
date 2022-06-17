@@ -375,9 +375,9 @@ a.serviceBtn:hover {
   display: flex;
   width: 100%;
   min-height: 15rem;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   text-align: center;
   box-shadow: 0 0 1rem 0.1rem #333;
   color: #fff;
@@ -392,6 +392,7 @@ a.serviceBtn:hover {
 .work h3 {
   font-size: clamp(1rem, 3vw, 1.5rem);
   margin: 1rem 0;
+  text-align: start;
 }
 
 .work p {

@@ -1,11 +1,29 @@
 import { Button, ButtonGroup, Divider } from "@mui/material";
 import Image from "next/image";
-import data from "../data/service";
+// import data from "../data/service";
 import works from "../data/works";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
+import useSWR from "swr";
+import {
+  MdWeb,
+  MdOutlineAppSettingsAlt,
+  MdOutlineMic,
+  MdAddBusiness,
+} from "react-icons/md";
+
+import { BsTerminalFill } from "react-icons/bs";
 
 export default function Home() {
+  const fetcher = (...args) => fetch(...args).then((res) => res.json());
+   const { data, error } = useSWR("/api/services", fetcher);
+
+  if (error) return console.log(error);
+  if (!data) return console.log('loading');
+
+  const serviceData = data.service;
+  console.log(serviceData);
+
   return (
     <div className={styles.container}>
       <div className={styles.bannerContainer}>
@@ -31,23 +49,24 @@ export default function Home() {
         <Divider className={styles.divider}>
           <div className={styles.heading}></div>
           <h2>Our Services</h2>
-        </Divider>
+        </Divider> 
 
         <div className={styles.serviceBox}>
-          {data.slice(0, 4).map((item, i) => (
-            <div key={i} className={styles.service}>
-              <item.image className={styles.serviceIcon} />
-              {/* <Image
-                src="/image/banner.webp"
+          {serviceData &&
+            serviceData.slice(0, 4).map((item, i) => (
+              <div key={i} className={styles.service}>
+                <item.file className={styles.serviceIcon} />
+                {/* <Image
+                src={item.file}
                 alt="testimonials"
                 width={50}
                 height={50}
                 style={{ borderRadius: "50%" }}
               /> */}
-              <h3>{item.title}</h3>
-              <p>{item.desc}</p>
-            </div>
-          ))}
+                <h3>{item.title}</h3>
+                <p>{item.desc}</p>
+              </div>
+            ))}
         </div>
         <Link href="./Services" passHref>
           <Button className={styles.serviceBtn}>Load More</Button>
@@ -108,8 +127,10 @@ export default function Home() {
                 height={50}
                 style={{ borderRadius: "50%" }}
               />
-              <h3>{item.title}</h3>
-              <p>{item.desc}</p>
+              <div>
+                <h3>{item.title}</h3>
+                <p>{item.desc}</p>
+              </div>
             </div>
           ))}
         </div>
